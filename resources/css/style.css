@@ -29,18 +29,16 @@
 /* Navbar Link Styles */
 .navbar-nav .nav-link {
     color: var(--header-text-color);
-    /* White text */
 }
 
 .navbar-nav .nav-link:hover {
     color: var(--header-tagline-color);
-    /* Light grey on hover */
+
 }
 
 /* Branding */
 .navbar-brand {
     color: var(--header-text-color);
-    /* White text */
     display: flex;
     align-items: center;
 }
@@ -54,139 +52,121 @@
     font-size: 24px;
     font-weight: bold;
     color: var(--header-text-color);
-    /* White text */
 }
 
 .navbar-tagline {
     font-size: 14px;
     color: var(--header-tagline-color);
-    /* Light grey text */
     margin-top: 5px;
 }
 
 /* Job Card Container */
 .job-card {
     background-color: var(--card-bg-color);
-    /* Card background color */
     border-radius: 12px;
-    /* Rounded corners */
     box-shadow: 0 4px 8px var(--card-shadow-color);
-    /* Default shadow */
     overflow: hidden;
-    /* Hide overflowing content */
     transition: box-shadow 0.3s ease;
-    /* Smooth shadow transition */
     margin: 1rem;
-    /* Margin around card */
     padding: 1rem;
-    /* Padding inside card */
 }
 
 /* Remove border from Bootstrap card */
 .card {
     border: none;
-    /* Remove card border */
     background: transparent;
-    /* Ensure the background is transparent */
 }
 
 /* Card Body Styling */
 .card-body {
     padding: 1rem;
-    /* Padding inside the card body */
     color: var(--body-text-color);
-    /* Set text color */
 }
 
 /* Card Title Styling */
 .card-title {
     font-size: 2.1rem;
-    /* Font size for the title */
     font-weight: bold;
-    /* Make the title bold */
     color: #000000;
-    /* Text color for the title */
     margin-bottom: 0.5rem;
-    /* Space below the title */
 }
 
 /* Card Text Styling */
 .card-text {
     color: #000000;
- /* General text color */
     margin-bottom: 0.5rem;
-    /* Space below text elements */
+
 
 }
 
 /* Hover Effect for Job Card */
 .job-card:hover {
     box-shadow: 0 6px 12px var(--card-shadow-color);
-    /* More pronounced shadow on hover */
+
     background-color: #F0F0F0;
-    /* Optional: Light background change on hover */
+
 }
 
 /* Button Styling */
 .btn-primary {
     background-color: var(--apply-button-bg-color);
-    /* Background color for the button */
+
     border-color: var(--apply-button-bg-color);
-    /* Border color for the button */
+
     color: var(--apply-button-text-color);
-    /* Text color for the button */
+
 }
 
 /* Button Hover Effect */
 .btn-primary:hover {
     background-color: #47089b;
-    /* Darker blue for hover */
+
     border-color: #5100BA;
-    /* Darker blue border on hover */
+
 }
 
 /* Job Filter Form Styles */
 form.job-filter {
     margin-top: 2rem;
-    /* Space between the header and form */
+
     background-color: #f4f4f4;
-    /* Light grey background */
+
     padding: 1.5rem 2rem;
-    /* Padding inside the form */
+
     border-radius: 10px;
-    /* Rounded corners */
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
+
     margin-bottom: 2rem;
-    /* Space below the form */
+
     overflow-x: auto;
-    /* Add horizontal scroll if content overflows */
+
     white-space: nowrap;
-    /* Prevent wrapping of the form elements */
+
 }
 
 /* Styling the form row to handle horizontal layout */
 form.job-filter .row {
     display: flex;
     justify-content: space-between;
-    /* Space between fields */
+
     align-items: center;
-    /* Align items in the middle vertically */
+
     gap: 1rem;
-    /* Space between form fields */
+
     flex-wrap: nowrap;
-    /* Prevent the form fields from wrapping to a new line */
+
 }
 
 /* Column sizing for the fields */
 form.job-filter .col-md-3 {
     flex: 1;
     min-width: 200px;
-    /* Ensure fields don’t get too narrow */
+
     display: inline-block;
-    /* Keep each field inline */
+
     white-space: normal;
-    /* Allow text wrapping inside each form field */
+
 }
 
 /* Label Styling */
@@ -195,7 +175,7 @@ form.job-filter .form-label {
     font-size: 1rem;
     color: #333;
     margin-bottom: 0.5rem;
-    /* Space below the label */
+
 }
 
 /* Input and Select Field Styling */
@@ -207,10 +187,10 @@ form.job-filter .form-control {
     font-size: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    /* Slight shadow */
+
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    /* Ensure fields are fully responsive */
+
 }
 
 /* Input Focus State */
@@ -218,7 +198,7 @@ form.job-filter .form-select:focus,
 form.job-filter .form-control:focus {
     border-color: #0056b3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Slight shadow on focus */
+
 }
 
 /* Submit Button Styling */
@@ -227,19 +207,19 @@ form.job-filter .btn-primary {
     font-size: 1rem;
     border-radius: 8px;
     white-space: nowrap;
-    /* Prevent button text from wrapping */
+
 }
 
 /* Responsive Design: Adjust padding on smaller screens */
 @media (max-width: 768px) {
     form.job-filter {
         padding: 1rem;
-        /* Reduce padding on smaller screens */
+
     }
 
     form.job-filter .btn-primary {
         padding: 0.5rem 1rem;
-        /* Adjust button padding on smaller screens */
+
     }
 }
 
@@ -247,7 +227,7 @@ form.job-filter .btn-primary {
     display: block;
     text-decoration: none;
     color: inherit;
-    /* Inherit color from parent */
+
 }
 
 
