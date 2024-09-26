@@ -8,6 +8,9 @@
     <title>@yield('title', 'WiseJobs')</title>
     <link rel="icon" href="{{ asset('images/logo-small.jpeg') }}" type="image/x-icon">
 
+    <!-- Preload Key Fonts -->
+    <link rel="preload" href="{{ asset('fonts/your-font.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous">
+
     <!-- Inline Critical CSS -->
     <style>
         /* smooth scrolling */
@@ -21,7 +24,7 @@
             background-color: var(--body-bg-color);
             color: var(--body-text-color);
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Your Font', Arial, sans-serif; /* Use system fonts as fallback */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -38,6 +41,13 @@
             position: relative;
             bottom: 0;
         }
+
+        @font-face {
+            font-family: 'Your Font';
+            src: url('{{ asset('fonts/your-font.woff2') }}') format('woff2'),
+                 url('{{ asset('fonts/your-font.woff') }}') format('woff');
+            font-display: swap; /* Ensures text is visible while the font is loading */
+        }
     </style>
 
     <!-- Bootstrap CSS -->
@@ -52,7 +62,8 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @vite('resources/css/app.css')
+    @vite('resources/css/style.css')
 
     <!-- Additional Styles -->
     @stack('styles')

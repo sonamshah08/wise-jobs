@@ -2,8 +2,8 @@
     <a class="navbar-brand d-flex align-items-center" href="{{ route('jobs.index') }}">
         <!-- Responsive and Lazy Loaded Logo -->
         <img
-            src="{{ asset('images/logo.png') }}"
-            srcset="{{ asset('images/logo-small.jpeg') }} 320w, {{ asset('images/logo-medium.png') }} 768w, {{ asset('images/logo-large.png') }} 1200w"
+            src="{{ asset('images/logo.webp') }}"
+            srcset="{{ asset('images/logo-small.webp') }} 320w, {{ asset('images/logo-medium.webp') }} 768w, {{ asset('images/logo-large.webp') }} 1200w"
             sizes="(max-width: 320px) 100vw, (max-width: 768px) 50vw, 1200px"
             loading="lazy"
             alt="WiseJobs Logo"

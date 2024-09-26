@@ -25,6 +25,7 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('js/infinite-scroll.js') }}"></script>
-    <script src="{{ asset('js/job-filter.js') }}"></script>
+   @vite(['resources/js/infinite-scroll.js', 'resources/js/job-filter.js'])
+
 @endpush
+
