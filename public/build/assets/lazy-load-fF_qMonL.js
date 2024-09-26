@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){!function(){const e=document.querySelectorAll(".lazy"),t=new IntersectionObserver(((e,n)=>{e.forEach((e=>{if(e.isIntersecting){const n=e.target,o=n.querySelector(".card");o&&(o.style.display="block"),n.classList.remove("lazy"),t.unobserve(n)}}))}));e.forEach((e=>{t.observe(e)}))}()}));
